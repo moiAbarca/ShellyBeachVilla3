@@ -1,0 +1,185 @@
+/* Shelly Beach Villa 3.0 — Global Styles */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fbfbfd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #144bb8;
+    border-radius: 3px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.font-mincho {
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* Hero: video fills 100% of width/height without extra scale */
+.hero-video-container {
+    height: 280vh;
+    position: relative;
+}
+
+.hero-video-sticky {
+    position: sticky;
+    top: 10vh;
+    /* Fija un poco por debajo del header */
+    width: 100%;
+    background: #ffffff;
+    /* Fondo blanco */
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    /* Espacio extra abajo para el SCROLL hint */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroVideo {
+    width: 100%;
+    height: auto;
+    /* Permite que el contenedor se ajuste al 100% de la altura de la imagen */
+    display: block;
+}
+
+.hero-scroll-hint {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    pointer-events: none;
+    animation: fadeInUp 1.5s ease 1s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+    animation: scrollLine 2s ease-in-out infinite;
+}
+
+@keyframes scrollLine {
+    0% {
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 1;
+    }
+
+    50% {
+        transform: scaleY(1);
+        transform-origin: top;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+        opacity: 0;
+    }
+}
+
+/* Cards hover effect */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(20, 75, 184, 0.08);
+}
+
+/* Image zoom on hover */
+.img-zoom img {
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.img-zoom:hover img {
+    transform: scale(1.05);
+}
+
+/* Fade-in animation for sections */
+.fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* FAQ Accordion */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 300px;
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Video Tour overlay */
+.video-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.video-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.video-overlay video {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 8px;
+}

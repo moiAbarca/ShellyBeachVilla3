@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>よくある質問・お問い合わせ | Shelly Beach Villa</title>
+    <meta name="description" content="Shelly Beach Villa へのお問い合わせ・内覧予約。よくある質問（FAQ）もご覧ください。" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { "primary": "#144bb8", "bg-light": "#fbfbfd", "bg-stone": "#f2f0ed", "wood": "#a68d71" },
+                    fontFamily: { "display": ["Manrope", "sans-serif"], "serif": ["'Noto Serif JP'", "serif"] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="assets/style.css" rel="stylesheet" />
+    <script src="assets/components.js" defer></script>
+    <script src="assets/script.js" defer></script>
+</head>
+
+<body class="bg-bg-light font-display text-slate-900 overflow-x-hidden pt-24">
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="pt-20 pb-14 px-6 lg:px-20 bg-bg-stone border-b border-stone-200">
+            <div class="max-w-3xl mx-auto text-center fade-in">
+                <span class="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">Support &
+                    Inquiries</span>
+                <h1 class="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">よくある質問と連絡先</h1>
+                <p class="text-slate-600 leading-relaxed">
+                    ニュージーランドでの新しい生活を安心して始めていただくために、<br />入居に関する詳細やお手続きについてまとめました。
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-14 px-6 lg:px-20 bg-white" id="faq">
+            <div class="max-w-2xl mx-auto space-y-4">
+
+                <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden">
+                    <button
+                        class="faq-trigger w-full flex justify-between items-center px-6 py-5 text-left font-semibold text-slate-800 hover:bg-stone-50 transition-colors">
+                        <span>敷金（ボンド）は必要ですか？</span>
+                        <span class="material-symbols-outlined faq-icon text-primary text-2xl flex-shrink-0">add</span>
+                    </button>
+                    <div class="faq-answer px-6 text-slate-600 text-sm leading-relaxed">
+                        いいえ、敷金・礼金はいただいておりません。シンプルで透明性の高い料金体系で、初期費用を最小限に抑えています。
+                    </div>
+                </div>
+
+                <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden">
+                    <button
+                        class="faq-trigger w-full flex justify-between items-center px-6 py-5 text-left font-semibold text-slate-800 hover:bg-stone-50 transition-colors">
+                        <span>最短入居期間はありますか？</span>
+                        <span class="material-symbols-outlined faq-icon text-primary text-2xl flex-shrink-0">add</span>
+                    </button>
+                    <div class="faq-answer px-6 text-slate-600 text-sm leading-relaxed">
+                        最短入居期間はありません。1週間からでも対応しており、長期滞在も大歓迎です。
+                    </div>
+                </div>
+
+                <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden">
+                    <button
+                        class="faq-trigger w-full flex justify-between items-center px-6 py-5 text-left font-semibold text-slate-800 hover:bg-stone-50 transition-colors">
+                        <span>洗濯機やキッチンの利用制限はありますか？</span>
+                        <span class="material-symbols-outlined faq-icon text-primary text-2xl flex-shrink-0">add</span>
+                    </button>
+                    <div class="faq-answer px-6 text-slate-600 text-sm leading-relaxed">
+                        共有設備は自由にご利用いただけます。洗濯洗剤もご用意しています。
+                    </div>
+                </div>
+
+                <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden">
+                    <button
+                        class="faq-trigger w-full flex justify-between items-center px-6 py-5 text-left font-semibold text-slate-800 hover:bg-stone-50 transition-colors">
+                        <span>水道・光熱費やWi-Fiは家賃に含まれますか？</span>
+                        <span class="material-symbols-outlined faq-icon text-primary text-2xl flex-shrink-0">add</span>
+                    </button>
+                    <div class="faq-answer px-6 text-slate-600 text-sm leading-relaxed">
+                        はい、すべて含まれています。水道代、電気代、高速Wi-Fi（無制限）、ランドリー洗剤、共用部の清掃費用が週払いの家賃に含まれています。追加費用はございません。
+                    </div>
+                </div>
+
+                <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden">
+                    <button
+                        class="faq-trigger w-full flex justify-between items-center px-6 py-5 text-left font-semibold text-slate-800 hover:bg-stone-50 transition-colors">
+                        <span>内覧は可能ですか？</span>
+                        <span class="material-symbols-outlined faq-icon text-primary text-2xl flex-shrink-0">add</span>
+                    </button>
+                    <div class="faq-answer px-6 text-slate-600 text-sm leading-relaxed">
+                        もちろんです。現地でのご見学はもちろん、ZoomやLINEビデオ通話によるオンライン内覧にも対応しています。お気軽にご予約ください。
+                    </div>
+                </div>
+
+                <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden">
+                    <button
+                        class="faq-trigger w-full flex justify-between items-center px-6 py-5 text-left font-semibold text-slate-800 hover:bg-stone-50 transition-colors">
+                        <span>カップル・2人での入居はできますか？</span>
+                        <span class="material-symbols-outlined faq-icon text-primary text-2xl flex-shrink-0">add</span>
+                    </button>
+                    <div class="faq-answer px-6 text-slate-600 text-sm leading-relaxed">
+                        はい、ダブルルームはカップルでの入居に対応しています。詳しくは<a href="rooms.html"
+                            class="text-primary underline">お部屋のページ</a>をご覧ください。
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="py-14 px-6 lg:px-20 bg-bg-stone">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <!-- Left -->
+                <div class="fade-in">
+                    <h2 class="font-serif text-4xl font-bold mb-6">お問い合わせ</h2>
+                    <p class="text-slate-600 mb-10 leading-relaxed">
+                        内覧のご予約、空室状況、現地生活でのご不安な点など、どんな些細なことでも構いません。
+                        スタッフが心を込めて対応させていただきます。
+                    </p>
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="size-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm">Location</h5>
+                                <p class="text-slate-500 text-sm">30 Shelly Beach Road, St Marys Bay, Auckland 1011.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="size-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm">Email</h5>
+                                <p class="text-slate-500 text-sm">kiaora@shellybeachvilla.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="size-12 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm">Phone</h5>
+                                <p class="text-slate-500 text-sm">+64 27 668 3669</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-2xl">
+                        <img src="assets/pictures/around2.jpg" alt="Saint Marys Bay Area"
+                            class="w-full h-full object-cover aspect-[4/3]" />
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="bg-white p-10 rounded-2xl shadow-sm fade-in">
+                    <form class="space-y-6" action="#" method="post">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase text-slate-500">お名前</label>
+                                <input
+                                    class="w-full border-0 border-b-2 border-stone-200 bg-transparent py-3 focus:ring-0 focus:border-primary transition-colors placeholder:text-slate-300"
+                                    placeholder="山田 太郎" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase text-slate-500">メールアドレス</label>
+                                <input
+                                    class="w-full border-0 border-b-2 border-stone-200 bg-transparent py-3 focus:ring-0 focus:border-primary transition-colors placeholder:text-slate-300"
+                                    placeholder="email@example.com" type="email" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase text-slate-500">ご希望の部屋タイプ</label>
+                            <select
+                                class="w-full border-0 border-b-2 border-stone-200 bg-transparent py-3 focus:ring-0 focus:border-primary transition-colors text-slate-600">
+                                <option value="">選択してください</option>
+                                <option value="single">シングルルーム ($350/week)</option>
+                                <option value="double">ダブルルーム ($480/week)</option>
+                                <option value="other">その他・未定</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase text-slate-500">メッセージ</label>
+                            <textarea
+                                class="w-full border-0 border-b-2 border-stone-200 bg-transparent py-3 focus:ring-0 focus:border-primary transition-colors resize-none placeholder:text-slate-300"
+                                placeholder="内覧希望日や質問をご記入ください" rows="5"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full flex items-center justify-center gap-2 bg-primary text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-primary/20">
+                            メッセージを送信する
+                            <span class="material-symbols-outlined text-base">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>

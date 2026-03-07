@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shelly Beach Villa | Auckland Premium Sharehouse</title>
+    <meta name="description" content="オークランドの日本人向けプレミアム・シェアハウス。敷金不要、全費込み、日本語対応スタッフ常駐。" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#144bb8",
+                        "bg-light": "#fbfbfd",
+                        "bg-stone": "#f2f0ed",
+                        "wood": "#a68d71"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["'Noto Serif JP'", "serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="assets/style.css" rel="stylesheet" />
+    <script src="assets/components.js" defer></script>
+    <script src="assets/script.js" defer></script>
+</head>
+
+<body class="bg-bg-light font-display text-slate-900 overflow-x-hidden">
+
+    <div id="header-placeholder"></div>
+
+    <!-- Video Tour Modal -->
+    <div class="video-overlay" id="videoOverlay">
+        <button id="closeTour"
+            class="absolute top-5 right-6 text-white text-4xl leading-none hover:opacity-70 transition-opacity">&times;</button>
+        <video id="tourVideo" controls playsinline class="rounded-xl shadow-2xl">
+            <source src="assets/pictures/shellybeachvilla.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <main>
+        <!-- ========================
+         Scroll-Driven Hero
+    ========================= -->
+        <div class="hero-video-container">
+            <section class="hero-video-sticky">
+                <video id="heroVideo" muted playsinline preload="auto" poster="assets/pictures/shellyBeach.png">
+                    <source src="assets/hero-video.mp4" type="video/mp4" />
+                </video>
+
+                <div class="hero-scroll-hint">
+                    <div class="scroll-line"></div>
+                    <span>SCROLL</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================
+         Manifesto
+    ========================= -->
+        <section class="py-14 px-6 lg:px-20 bg-bg-light" id="concept">
+            <div class="max-w-4xl mx-auto text-center mb-16 fade-in">
+                <span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Manifesto</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-8 leading-relaxed">
+                    洗練された空間で、新しい生活を。
+                </h2>
+                <p class="text-slate-600 leading-loose text-lg font-light max-w-2xl mx-auto">
+                    オークランドの美しい海岸線、シェリービーチを望む邸宅。<br class="hidden md:block" />
+                    私たちは、単なる住まいではなく、ニュージーランドでの新しい人生の拠り所を提供します。
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-bg-stone p-10 rounded-2xl border border-stone-200/50 card-hover fade-in">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6 block text-center">payments</span>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center">敷金なし</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed text-center">デポジット不要。</p>
+                </div>
+                <div class="bg-bg-stone p-10 rounded-2xl border border-stone-200/50 card-hover fade-in">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-6 block text-center">av_timer</span>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center">最低宿泊期間なし</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed text-center">お好きな期間ご滞在いただけます。</p>
+                </div>
+                <div class="bg-bg-stone p-10 rounded-2xl border border-stone-200/50 card-hover fade-in">
+                    <span
+                        class="material-symbols-outlined text-primary text-4xl mb-6 block text-center">calendar_month</span>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center">柔軟な滞在期間</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed text-center">短期から長期まで対応。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+         House Tour Video CTA
+    ========================= -->
+        <section class="relative py-14 px-6 lg:px-20 overflow-hidden bg-slate-900 text-white">
+            <div class="absolute inset-0 opacity-30">
+                <img src="assets/pictures/lounge2.jpg" alt="Living Lounge" class="w-full h-full object-cover" />
+            </div>
+            <div class="relative max-w-3xl mx-auto text-center fade-in">
+                <p class="text-xs uppercase tracking-widest text-white/60 mb-4">Virtual Tour</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-6">
+                    実際のお部屋を<br />ご覧ください。
+                </h2>
+                <p class="text-white/70 mb-10 leading-relaxed">
+                    シェリービーチ・ヴィラの共用空間、個室、そして美しいバルコニーをビデオでご体感ください。
+                </p>
+                <button data-open-tour
+                    class="inline-flex items-center gap-3 bg-white text-primary font-bold px-8 py-4 rounded-full hover:bg-white/90 transition-all shadow-2xl group">
+                    <span
+                        class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform">play_circle</span>
+                    ツアー動画を見る
+                </button>
+            </div>
+        </section>
+
+        <!-- ========================
+         Our Rooms
+    ========================= -->
+        <section class="py-14 px-6 lg:px-20 bg-white" id="rooms">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-14 gap-6 fade-in">
+                    <div>
+                        <span
+                            class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Accommodations</span>
+                        <h2 class="font-serif text-4xl font-bold">お部屋のご案内</h2>
+                    </div>
+                    <p class="text-slate-500 max-w-sm text-sm leading-relaxed">
+                        全室光熱費・高速Wi-Fi込み。プライバシーと快適さを両立した上質な個室をご用意しました。</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Single Room -->
+                    <div class="group fade-in">
+                        <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] img-zoom">
+                            <img class="object-cover w-full h-full" src="assets/pictures/room1.jpg" alt="シングルルーム" />
+                            <div
+                                class="absolute top-4 right-4 bg-primary text-white px-4 py-1.5 rounded-full text-xs font-bold">
+                                一人暮らしに最適</div>
+                        </div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-1">シングルルーム</h3>
+                                <div class="flex items-center gap-4 text-slate-500 text-sm">
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-lg">desk</span>専用デスク</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-lg">wifi</span>高速Wi-Fi</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-3xl font-black text-primary">$350</span>
+                                <span class="block text-xs text-slate-400 font-medium">/ week (All Incl.)</span>
+                            </div>
+                        </div>
+                        <a href="rooms.html"
+                            class="block w-full py-4 border border-stone-200 rounded-xl text-sm font-bold text-center hover:bg-stone-50 transition-colors">お部屋の詳細を見る</a>
+                    </div>
+
+                    <!-- Double Room -->
+                    <div class="group fade-in">
+                        <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] img-zoom">
+                            <img class="object-cover w-full h-full" src="assets/pictures/doubleroom.jpeg"
+                                alt="ダブルルーム" />
+                            <div
+                                class="absolute top-4 right-4 bg-wood text-white px-4 py-1.5 rounded-full text-xs font-bold">
+                                カップル・広め希望の方</div>
+                        </div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-1">ダブルルーム</h3>
+                                <div class="flex items-center gap-4 text-slate-500 text-sm">
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-lg">desk</span>専用デスク</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-lg">king_bed</span>クイーンサイズ</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-3xl font-black text-primary">$480</span>
+                                <span class="block text-xs text-slate-400 font-medium">/ week (All Incl.)</span>
+                            </div>
+                        </div>
+                        <a href="rooms.html"
+                            class="block w-full py-4 border border-stone-200 rounded-xl text-sm font-bold text-center hover:bg-stone-50 transition-colors">お部屋の詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+         Facilities Grid
+    ========================= -->
+        <section class="py-14 px-6 lg:px-20 bg-bg-stone" id="facilities">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16 fade-in">
+                    <span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Shared
+                        Space</span>
+                    <h2 class="font-serif text-4xl font-bold">共用設備</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:h-[560px] fade-in">
+                    <!-- Living Lounge — large -->
+                    <div class="md:col-span-2 relative rounded-2xl overflow-hidden group img-zoom">
+                        <img class="object-cover w-full h-full min-h-[300px]" src="assets/pictures/lounge.jpg"
+                            alt="Living Lounge" />
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h4 class="font-serif text-xl font-bold">Living Lounge</h4>
+                            <p class="text-sm opacity-80">海を一望する開放的なラウンジ</p>
+                        </div>
+                    </div>
+                    <!-- Kitchen + Balcony stacked -->
+                    <div class="grid grid-rows-2 gap-4">
+                        <div class="relative rounded-2xl overflow-hidden group img-zoom">
+                            <img class="object-cover w-full h-full min-h-[150px]" src="assets/pictures/kitchen.jpg"
+                                alt="Gourmet Kitchen" />
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-serif text-lg font-bold">Gourmet Kitchen</h4>
+                            </div>
+                        </div>
+                        <div class="relative rounded-2xl overflow-hidden group img-zoom">
+                            <img class="object-cover w-full h-full min-h-[150px]" src="assets/pictures/balconi.jpg"
+                                alt="Ocean Balcony" />
+                            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <h4 class="font-serif text-lg font-bold">Ocean Balcony</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <a href="facilities.html"
+                        class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-blue-700 transition-all shadow-lg shadow-primary/20">
+                        全ての設備を見る <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+         Photo Gallery strip
+    ========================= -->
+        <section class="py-0 overflow-hidden">
+            <div class="flex gap-1" style="height:260px;">
+                <div class="flex-1 overflow-hidden img-zoom"><img src="assets/pictures/entrance.jpg" alt="Entrance"
+                        class="w-full h-full object-cover" /></div>
+                <div class="flex-1 overflow-hidden img-zoom"><img src="assets/pictures/lounge2.jpg" alt="Lounge"
+                        class="w-full h-full object-cover" /></div>
+                <div class="flex-1 overflow-hidden img-zoom"><img src="assets/pictures/backyard.jpg" alt="Backyard"
+                        class="w-full h-full object-cover" /></div>
+                <div class="flex-1 overflow-hidden img-zoom"><img src="assets/pictures/kitchen2.jpg" alt="Kitchen"
+                        class="w-full h-full object-cover" /></div>
+                <div class="flex-1 overflow-hidden img-zoom hidden lg:block"><img src="assets/pictures/studyroom.jpg"
+                        alt="Study" class="w-full h-full object-cover" /></div>
+            </div>
+        </section>
+
+        <!-- ========================
+         Contact CTA
+    ========================= -->
+        <section class="py-14 px-6 lg:px-20 bg-white" id="contact-cta">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <div class="fade-in">
+                    <h2 class="font-serif text-4xl font-bold mb-8">お問い合わせ</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="size-12 rounded-full bg-bg-stone flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm">Address</h5>
+                                <p class="text-slate-500 text-sm">30 Shelly Beach Road, St Marys Bay, Auckland 1011.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="size-12 rounded-full bg-bg-stone flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm">Email</h5>
+                                <p class="text-slate-500 text-sm">kiaora@shellybeachvilla.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="size-12 rounded-full bg-bg-stone flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-sm">Phone</h5>
+                                <p class="text-slate-500 text-sm">+64 27 668 3669</p>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-10 overflow-hidden rounded-2xl border border-stone-200 shadow-sm aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:h-[280px]">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.9541227335035!2d174.7390756761154!3d-36.84357477223484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4785fe7f17c1%3A0xe61b0867d3b460fa!2s30%20Shelly%20Beach%20Road%2C%20St%20Marys%20Bay%2C%20Auckland%201011!5e0!3m2!1sen!2snz!4v1772750066300!5m2!1sen!2snz"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-bg-stone p-10 rounded-2xl fade-in">
+                    <form class="space-y-6" action="#" method="post">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase text-slate-500">お名前</label>
+                                <input
+                                    class="w-full border-0 border-b border-stone-300 bg-transparent py-3 focus:ring-0 focus:border-primary transition-colors"
+                                    placeholder="山田 太郎" type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase text-slate-500">メールアドレス</label>
+                                <input
+                                    class="w-full border-0 border-b border-stone-300 bg-transparent py-3 focus:ring-0 focus:border-primary transition-colors"
+                                    placeholder="example@mail.com" type="email" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase text-slate-500">ご希望の部屋タイプ</label>
+                            <select
+                                class="w-full border-0 border-b border-stone-300 bg-transparent py-3 focus:ring-0 focus:border-primary transition-colors">
+                                <option>選択してください</option>
+                                <option>シングルルーム ($350/week)</option>
+                                <option>ダブルルーム ($480/week)</option>
+                                <option>その他・未定</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase text-slate-500">メッセージ</label>
+                            <textarea
+                                class="w-full border-0 border-b border-stone-300 bg-transparent py-3 focus:ring-0 focus:border-primary transition-colors resize-none"
+                                placeholder="内覧のご希望日や、ご質問をご記入ください" rows="4"></textarea>
+                        </div>
+                        <p class="text-xs text-slate-400 font-medium italic">※ 日本語で対応いたします</p>
+                        <button
+                            class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-primary/20">
+                            送信する
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+</body>
+
+</html>

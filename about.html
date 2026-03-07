@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>コンセプト・私たちについて | Shelly Beach Villa</title>
+    <meta name="description" content="シェリービーチ・ヴィラのコンセプト。ニュージーランドに暮らす日本人のために。" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { "primary": "#144bb8", "bg-light": "#fbfbfd", "bg-stone": "#f2f0ed", "wood": "#a68d71" },
+                    fontFamily: { "display": ["Manrope", "sans-serif"], "serif": ["'Noto Serif JP'", "serif"] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="assets/style.css" rel="stylesheet" />
+    <script src="assets/components.js" defer></script>
+    <script src="assets/script.js" defer></script>
+</head>
+
+<body class="bg-bg-light font-display text-slate-900 overflow-x-hidden pt-24">
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Concept Hero -->
+        <section class="py-14 px-6 lg:px-20 bg-white">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Our Concept</span>
+                    <h1 class="font-serif text-4xl md:text-5xl font-bold leading-tight mb-8">
+                        異国の地で、<br />心安らぐ<br />「おもてなし」を。
+                    </h1>
+                    <p class="text-slate-600 leading-relaxed text-lg">
+                        ニュージーランドの開放的なライフスタイルと、日本のきめ細やかな「おもてなし」が美しく融和する場所。私たちは、単なる「住まい」以上の感情を、ここシェリービーチでご提供します。
+                    </p>
+                </div>
+                <div class="relative fade-in">
+                    <div class="overflow-hidden rounded-2xl">
+                        <img src="assets/pictures/aboutus.jpg" alt="Shelly Beach Villa Exterior"
+                            class="w-full h-full object-cover aspect-[4/3]" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story / Philosophy -->
+        <section class="py-14 px-6 lg:px-20 bg-bg-stone">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="font-serif text-3xl font-bold text-center mb-16 fade-in">設立の想い</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <div class="overflow-hidden rounded-2xl img-zoom fade-in">
+                        <img src="assets/pictures/lounge2.jpg" alt="Living Lounge"
+                            class="w-full h-full object-cover aspect-[4/3]" />
+                    </div>
+                    <div class="space-y-6 text-slate-600 leading-relaxed fade-in">
+                        <p class="font-serif text-lg italic border-l-4 border-primary/30 pl-6">
+                            「スーツケース一つで、すぐに自分らしくいられる場所を。」
+                        </p>
+                        <p>
+                            海外生活の始まりは、期待と不安が交錯するものです。特にオークランドのような都市での新生活は、住まい探しや学手続きの煩雑さだけでも大きな負担となりがちです。
+                        </p>
+                        <p>
+                            ラグジュアリーな空間に日本人の感性に沿った細やかなサポートを、私たちは皆様のニュージーランド生活における「素家」のような、安心で安定できる基盤でありたいと思っています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 Pillars -->
+        <section class="py-14 px-6 lg:px-20 bg-white">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="fade-in">
+                    <p class="text-5xl font-black text-primary/20 mb-4 font-serif text-center">01</p>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center">静寂と調和</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed text-center">
+                        オークランド随一の景観地に位置する静かな住宅地で、忙しい日々の中にも自分を見つめ直せる静かな時間をご提供します。</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-5xl font-black text-primary/20 mb-4 font-serif text-center">02</p>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center">安心できる環境</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed text-center">
+                        同じ文化背景を持つ入居者が多く、自然と馴染みやすい空間。海外生活でも安心して新しい生活を始められます。</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-5xl font-black text-primary/20 mb-4 font-serif text-center">03</p>
+                    <h3 class="font-serif text-xl font-bold mb-4 text-center">コミュニティの質</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed text-center">
+                        同じ目線を持って生きてきた者同士の自然な交流。共有スペースで繋がり、あなたの固タイプが合う上質だなコミュニティに出会えます。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Photo -->
+        <section class="py-12 px-6 lg:px-20 fade-in">
+            <div class="max-w-4xl mx-auto overflow-hidden rounded-2xl" style="height:360px;">
+                <img src="assets/comunity2.png" alt="Community — Shelly Beach Villa"
+                    class="w-full h-full object-cover object-center" />
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section class="py-14 px-6 lg:px-20 bg-bg-stone">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Location</span>
+                    <h2 class="font-serif text-3xl font-bold mb-6">Saint Marys Bay, Auckland</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        オークランド中心部から車で約10分。海岸線とシティビューを同時に楽しめる、理想的なロケーション。閑静な住宅街でありながら、スーパーマーケットや飲食店へも徒歩圏内です。
+                    </p>
+                    <div class="space-y-4 text-sm text-slate-600">
+                        <div class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary">location_on</span> 30 Shelly Beach Road,
+                            St Marys Bay, Auckland 1011.</div>
+                        <div class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary">directions_bus</span> 市内バス停まで徒歩5分</div>
+                        <div class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary">local_grocery_store</span> スーパー・コンビニ徒歩15分
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-2xl fade-in">
+                    <img src="assets/pictures/around.jpg" alt="Around Shelly Beach"
+                        class="w-full h-full object-cover aspect-[4/3]" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Tagline CTA -->
+        <section class="py-28 px-6 text-center bg-white">
+            <div class="max-w-2xl mx-auto fade-in">
+                <p class="font-serif text-2xl md:text-3xl italic text-slate-400 mb-8">Connecting Cultures, Creating
+                    Homes.</p>
+                <p class="text-slate-600 mb-10">あなたの新しい物語を、ここシェリービーチから始めませんか。</p>
+                <a href="contact.html"
+                    class="inline-block bg-primary text-white px-10 py-4 rounded-full font-bold hover:bg-blue-700 transition-all shadow-lg shadow-primary/20">
+                    お問い合わせはこちら
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>

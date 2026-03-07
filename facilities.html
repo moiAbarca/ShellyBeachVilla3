@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>施設・共有スペース | Shelly Beach Villa</title>
+    <meta name="description" content="リビングラウンジ、グルメキッチン、バルコニー、ランドリー完備。全費用込みの快適な共用スペース。" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { "primary": "#144bb8", "bg-light": "#fbfbfd", "bg-stone": "#f2f0ed", "wood": "#a68d71" },
+                    fontFamily: { "display": ["Manrope", "sans-serif"], "serif": ["'Noto Serif JP'", "serif"] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="assets/style.css" rel="stylesheet" />
+    <script src="assets/components.js" defer></script>
+    <script src="assets/script.js" defer></script>
+</head>
+
+<body class="bg-bg-light font-display text-slate-900 overflow-x-hidden pt-24">
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="pt-20 pb-14 px-6 lg:px-20 bg-bg-stone border-b border-stone-200">
+            <div class="max-w-7xl mx-auto fade-in">
+                <span class="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">The Art of
+                    Living</span>
+                <h1 class="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">施設・共有スペース</h1>
+                <p class="max-w-2xl text-slate-600 leading-relaxed">
+                    「間」を大切にした、静謐な時間。<br />
+                    五感を満たす上質な設備が、ニュージーランドの暮らしを豊かに彩ります。
+                </p>
+            </div>
+        </section>
+
+        <!-- Living Lounge -->
+        <section class="py-14 px-6 lg:px-20 bg-white border-b border-stone-100">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative overflow-hidden rounded-2xl img-zoom fade-in">
+                    <img class="w-full h-full object-cover aspect-[4/3]" src="assets/pictures/lounge.jpg"
+                        alt="Living Lounge" />
+                </div>
+                <div class="fade-in">
+                    <h2 class="font-serif text-4xl font-bold mb-6">Living Lounge</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        海と空が溶け合う、パノラマの景色。選び抜かれた家具と、柔らかな光が差し込む大空間は、住まう人々が自然と集い、語らう場所。
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">tv</span> 75インチ 4K Smart TV
+                            (Netflix/Prime対応)</li>
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">speaker</span> ハイエンド・オーディオシステム
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kitchen -->
+        <section class="py-14 px-6 lg:px-20 bg-bg-stone border-b border-stone-100">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 fade-in">
+                    <h2 class="font-serif text-4xl font-bold mb-6">Gourmet Kitchen</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        料理という営みの愉しみ。設備の整ったフルキッチン、大容量の冷蔵庫、そして洗練された食器。ここでの食卓は、毎日が特別なものになります。
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">fireplace</span> 設備の整ったフルキッチン
+                        </li>
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">kitchen</span>
+                            複数の調理スペースで同時に料理可能
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 lg:order-2 space-y-3 fade-in">
+                    <div class="relative overflow-hidden rounded-2xl img-zoom">
+                        <img class="w-full h-full object-cover aspect-[4/3]" src="assets/pictures/kitchen.jpg"
+                            alt="Gourmet Kitchen" />
+                    </div>
+                    <div class="relative overflow-hidden rounded-2xl img-zoom">
+                        <img class="w-full h-full object-cover aspect-[16/6]" src="assets/pictures/kitchen2.jpg"
+                            alt="Kitchen detail" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Balcony -->
+        <section class="py-14 px-6 lg:px-20 bg-white border-b border-stone-100">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative overflow-hidden rounded-2xl img-zoom fade-in">
+                    <img class="w-full h-full object-cover aspect-[4/3]" src="assets/pictures/balconi.jpg"
+                        alt="Ocean Balcony" />
+                </div>
+                <div class="fade-in">
+                    <h2 class="font-serif text-4xl font-bold mb-6">Ocean Balcony</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        潮風を感じる、特等席。夕暮れ時には、オークランドの夜灯が海面に揺れる様子を眺めながら、ニュージーランド産ワインで一日を贅沢に締め括る。
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">deck</span> アウトドア・ソファダイニング</li>
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">outdoor_grill</span>
+                            プレミアムBBQグリル</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Laundry & Other -->
+        <section class="py-14 px-6 lg:px-20 bg-bg-stone border-b border-stone-100">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 fade-in">
+                    <h2 class="font-serif text-4xl font-bold mb-6">Laundry & More</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        洗剤込みで自由に使える高性能な洗濯機と乾燥機。清潔さにこだわったバスルームとトイレも完備しています。
+                    </p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">local_laundry_service</span>
+                            ドラム式洗濯機・乾燥機（洗剤込み）</li>
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">shower</span> シャワー・バスタブ完備</li>
+                        <li class="flex items-center gap-3"><span
+                                class="material-symbols-outlined text-primary text-base">study</span> スタディルーム（作業スペース）
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 lg:order-2 grid grid-cols-2 gap-3 fade-in">
+                    <div class="overflow-hidden rounded-2xl img-zoom">
+                        <img class="w-full h-full object-cover aspect-[3/4]" src="assets/pictures/loundry.jpg"
+                            alt="Laundry" />
+                    </div>
+                    <div class="overflow-hidden rounded-2xl img-zoom">
+                        <img class="w-full h-full object-cover aspect-[3/4]" src="assets/pictures/shower.jpg"
+                            alt="Bathroom" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detail grid — all amenities -->
+        <section class="py-20 px-6 lg:px-20 bg-white">
+            <div class="max-w-6xl mx-auto text-center mb-16 fade-in">
+                <h2 class="font-serif text-3xl font-bold mb-3">快適さを支える、細部へのこだわり</h2>
+            </div>
+            <div
+                class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center text-sm text-slate-600 fade-in">
+                <div class="flex flex-col items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-4xl">wifi</span>
+                    <span class="font-bold">Ultra Fast Wi-Fi</span>
+                    <span class="text-slate-400 text-xs">全室ギガビット高速通信、リモートワークに快適</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-4xl">local_laundry_service</span>
+                    <span class="font-bold">Laundry Service</span>
+                    <span class="text-slate-400 text-xs">ドラム式洗濯機、洗剤も完備しています。</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-4xl">cleaning_services</span>
+                    <span class="font-bold">Regular Cleaning</span>
+                    <span class="text-slate-400 text-xs">週2のプロによる清掃、常に清潔な空間をご提供</span>
+                </div>
+                <div class="flex flex-col items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-4xl">security</span>
+                    <span class="font-bold">Security</span>
+                    <span class="text-slate-400 text-xs">各部屋にはセキュリティのため専用の鍵が付いています。</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-20 px-6 bg-slate-900 text-white text-center">
+            <div class="max-w-2xl mx-auto fade-in">
+                <h2 class="font-serif text-3xl font-bold mb-4">この空間を、あなたの日常に。</h2>
+                <p class="text-white/70 mb-10">ぜひ、この素敵な空間をあなた自身で体験してみませんか？</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="contact.html"
+                        class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-blue-600 transition-all">空室状況・内覧を予約する</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
